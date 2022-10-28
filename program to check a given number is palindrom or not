@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+ int n;
+ cout<<"enter the number"<<endl;
+ cin>>n;
+ int copy=n,sum=0,rem;   
+ while(n)                                        //to reverse a number
+ {
+     rem=n%10;
+     sum=sum*10 +rem;
+     n=n/10;
+ }
+ if(copy==sum)                               // to check the number is palindrome
+ {
+     cout<<" the given number is palindrome"<<endl;
+ }
+ else{
+     cout<<"the given number is not palindrome"<<endl;
+ }
+	return 0;
+}
